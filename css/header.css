@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    background-color: #990000;
+    margin: 0 0 0 750px;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.navigation__categories {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 168px;
+}
+
+.navigation__categories__login {
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+}
