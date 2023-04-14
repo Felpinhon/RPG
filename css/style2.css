@@ -1,4 +1,5 @@
-body {
+.main {
+  display: flex;
   height: 100%;
 }
 
@@ -7,7 +8,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 933px;
+    height: 100%;
     width: 100%;
     border: 5px solid black;
     box-sizing: border-box;
@@ -24,7 +25,7 @@ body {
 .item img {
     top: 0;
     left: 0;
-    height: 933px;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -32,8 +33,4 @@ body {
 
 .-border {
   border-right: 3px solid #000;
-}
-
-.teste-joao {
-  object-position: -820px 0;
 }

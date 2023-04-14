@@ -1,6 +1,5 @@
-const overlay = document.querySelector(".image-grid__item--overlay");
+const imgDiscord = document.getElementById('discord')
+const imgPaulo = document.getElementById('paulo')
+const imgJoao = document.getElementById('joao')
+const imgLuis = document.getElementById('luis')
 
-overlay.addEventListener("click", () => {
-  overlay.style.opacity = "0";
-  overlay.style.pointerEvents = "none";
-});

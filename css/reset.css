@@ -6,3 +6,15 @@
     text-decoration: none;
     font-family: 'Montserrat', cursive;
 }
+
+html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
