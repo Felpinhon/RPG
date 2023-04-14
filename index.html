@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/rpg.css">
+    <link rel="stylesheet" href="./css/main-popup.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,15 +19,32 @@
                 <img class="navigation__login__icon" src="./img/profilecria.png" alt="">
             </button>
     </header>
-        <main>
+        <main class="main">
             <div class="container">
                 <div class="item -border" id="discordDiv"><img src="./img/discordneon.png" id="discord"></div>
                 <div class="item -border" id="pauloDiv"><img src="./img/mulhersouls.jpg" id="paulo" onclick="expandirPaulo()"></div>
                 <div class="item -border" id="luisDiv"><img src="./img/luismuitofeio.jpg" id="luis"></div>
                 <div class="item" id="joaoDiv"><img class="teste-joao" src="./img/joaoimg.png" id="joao"></div>
             </div>
+            <div class="main__popup">
+                <div class="main__popup__column">
+                    <img class="main__popup__column__icon -planet" src="./img/world.png" alt="">
+                    <a href="">Planeta</a>
+                    <img class="main__popup__column__icon -ficha" src="./img/world.png" alt="">
+                    <a href="">Ficha</a>
+                    <img class="main__popup__column__icon -race" src="./img/world.png" alt="">
+                    <a href="">Raça</a>
+                </div>
+                <div class="main__popup__column">
+                    <img class="main__popup__column__icon -class" src="./img/class.png" alt="">
+                    <a href="">Classe</a>
+                    <img class="main__popup__column__icon -system" src="./img/system.webp" alt="">
+                    <a href="">Sistema</a>
+                    <img class="main__popup__column__icon -universe" src="./img/universe.png" alt="">
+                    <a href="">Universo</a>
+                </div>
+            </div>
         </main>
-
-        <script src="java.js"></script>
 </body>
+<script src="./java.js"></script>
 </html>
