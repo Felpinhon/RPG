@@ -50,8 +50,9 @@ const ajeitar = () => {
         imgLuis.style.width = '100%'
         imgLuis.style.objectFit = 'cover' 
         imgJoao.style.width = '100%'
+        imgJoao.style.height = '100%'
         imgJoao.style.objectFit = 'cover' 
-        imgPaulo.style.width = '135%'
+        imgPaulo.style.width = '100%'
         imgPaulo.style.objectFit = 'cover' 
 
         back.style.display = 'none'
@@ -62,6 +63,8 @@ const ajeitar = () => {
 }
 
 function retrair() {
+
+    back.style.display = 'none'
 
     ajeitar()
 
@@ -104,10 +107,12 @@ function retrair() {
     if(divJoao.style.width == '100%') {
 
         divJoao.classList.add('retrair-joao')
+        imgJoao.classList.add('retrair-imagem')
 
         setTimeout(() => {
 
             divJoao.classList.remove('retrair-joao')
+            imgJoao.classList.remove('retrair-imagem')
 
         }, 1000)
 
@@ -283,7 +288,7 @@ function expandirDiscord() {
         imgDiscord.style.width = '100%'    
         imgLuis.style.width = '100%'
         imgJoao.style.width = '100%'
-        imgPaulo.style.width = '135%'
+        imgPaulo.style.width = '150%'
 
         divDiscord.classList.add('expandir-discord')
 
