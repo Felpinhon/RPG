@@ -1,19 +1,26 @@
 .navigation {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 12%;
+    min-width: 240px;
     position: absolute;
     width: 25%;
     background-color: #990000;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     z-index: 2;
+    padding: 0 2%;
 }
 
 .navigation__categories__login {
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    height: 80%;
     border-radius: 60px;
+}
+
+.navigation__login__icon {
+    width: 50%;
+    height: 50%;
 }

@@ -5,6 +5,8 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Montserrat', cursive;
+    border: none;
+    box-sizing: border-box;
 }
 
 html {
