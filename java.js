@@ -15,13 +15,25 @@ const rpgPop = document.querySelector('.-rpgpopup')
 const pauloPop = document.querySelector('.paulo__popup')
 const luisPop = document.querySelector('.luis__popup')
 const joaoPop = document.querySelector('.joao__popup')
+const navigation =  document.querySelector('.navigation')
+const rpgTxt = document.querySelector('.navigation__categories__window__text')
+const imgButton = document.querySelector('.navigation__categories__login')
 
 function loginPopup() {
     loginpopup.style.display = 'flex'
+    document.getElementById('btnDisc').disabled = true;
+    document.getElementById('btnPaulo').disabled = true;
+    document.getElementById('btnLuis').disabled = true;
+    document.getElementById('btnJoao').disabled = true;
 }
 
 function loginPopupFechar() {
     loginpopup.style.display = 'none'
+    document.getElementById('btnDisc').disabled = false;
+    document.getElementById('btnPaulo').disabled = false;
+    document.getElementById('btnLuis').disabled = false;
+    document.getElementById('btnJoao').disabled = false;
+
 }
 
 const ajeitar = () => {
@@ -29,6 +41,11 @@ const ajeitar = () => {
     setTimeout(() => {
 
         container.style.border = '5px solid black'
+
+        navigation.classList.remove('descer')
+        navigation.style.height = '12%'
+        rpgTxt.style.display = 'flex'
+        imgButton.style.display = 'block'
 
         divDiscord.style.position = 'static'
         divDiscord.style.display = 'block'
@@ -58,7 +75,8 @@ const ajeitar = () => {
         divLuis.style.width = '100%'
         divLuis.style.flex = '13%'
 
-        imgDiscord.style.width = '100%'   
+        imgDiscord.style.width = '133%'
+        imgDiscord.style.marginLeft = '-21%'
         imgDiscord.style.objectFit = 'cover' 
         imgLuis.style.width = '100%'
         imgLuis.style.objectFit = 'cover' 
@@ -82,6 +100,7 @@ function retrair() {
     pauloPop.style.display = 'none'
     luisPop.style.display = 'none'
     joaoPop.style.display = 'none'
+    navigation.classList.add('descer')
 
     ajeitar()
 
@@ -92,6 +111,8 @@ function retrair() {
         setTimeout(() => {
 
             divDiscord.classList.remove('retrair-discord')
+            imgDiscord.style.width = '100%'
+            imgDiscord.style.marginLeft = '0%'
 
         }, 1000)
 
@@ -104,6 +125,8 @@ function retrair() {
         setTimeout(() => {
 
             divPaulo.classList.remove('retrair-paulo')
+            imgDiscord.style.width = '100%'
+            imgDiscord.style.marginLeft = '0%'
 
         }, 1000)
 
@@ -116,6 +139,10 @@ function retrair() {
         setTimeout(() => {
 
             divLuis.classList.remove('retrair-luis')
+            imgDiscord.style.width = '100%'
+            imgDiscord.style.marginLeft = '0%'
+            imgPaulo.style.width = '100%'
+            imgPaulo.style.marginLeft = '0%'
 
         }, 1000)
 
@@ -130,6 +157,10 @@ function retrair() {
 
             divJoao.classList.remove('retrair-joao')
             imgJoao.classList.remove('retrair-imagem')
+            imgDiscord.style.width = '100%'
+            imgDiscord.style.marginLeft = '0%'
+            imgLuis.style.width = '100%'
+            imgLuis.style.marginLeft = '0%'
 
         }, 1000)
 
@@ -143,7 +174,10 @@ function expandirPaulo() {
 
     if(display == 'block') {
 
+        navigation.classList.add('subir')
         container.style.border = 'none'
+        rpgTxt.style.display = 'none'
+        imgButton.style.display = 'none'
 
         divPaulo.style.position = 'absolute'
         divPaulo.style.display = 'flex'
@@ -154,7 +188,8 @@ function expandirPaulo() {
         divDiscord.style.width = '25.5%'
         divDiscord.style.left = '-0.5%'
     
-        imgDiscord.style.width = '68%'
+        imgDiscord.style.width = '133%'
+        imgDiscord.style.marginLeft = '-33%'
     
         divJoao.style.width = '23.5%'
         divJoao.style.left = '8.5%'
@@ -169,10 +204,12 @@ function expandirPaulo() {
 
         setTimeout(() => {
 
+            navigation.style.height = '4%'
             rpgPop.style.display = 'flex'
             pauloPop.style.display = 'flex'
             divPaulo.style.width = '100%'
             divPaulo.style.left = '0%'
+            navigation.classList.remove('subir')
             divPaulo.classList.remove('expandir-paulo')
             back.style.display = 'flex'
 
@@ -188,7 +225,10 @@ function expandirLuis() {
 
     if(display == 'block') {
 
+        navigation.classList.add('subir')
         container.style.border = 'none'
+        rpgTxt.style.display = 'none'
+        imgButton.style.display = 'none'
 
         divLuis.style.position = 'absolute'
         divLuis.style.display = 'flex'
@@ -210,16 +250,19 @@ function expandirLuis() {
         imgDiscord.style.width = '100%'
         imgLuis.style.width = '100%'
         imgJoao.style.width = '120%'
-        imgPaulo.style.width = '60%'
+        imgPaulo.style.width = '100%'
+        imgPaulo.style. marginLeft = '-40%'
 
         divLuis.classList.add('expandir-luis')
 
         setTimeout(() => {
 
+            navigation.style.height = '4%'
             rpgPop.style.display = 'flex'
             luisPop.style.display = 'flex'
             divLuis.style.width = '100%'
             divLuis.style.left = '0%'
+            navigation.classList.remove('subir')
             divLuis.classList.remove('expandir-luis')
             back.style.display = 'flex'
 
@@ -235,7 +278,10 @@ function expandirJoao() {
 
     if(display == 'block') {
 
+        navigation.classList.add('subir')
         container.style.border = 'none'
+        rpgTxt.style.display = 'none'
+        imgButton.style.display = 'none'
 
         divJoao.style.position = 'absolute'
         divJoao.style.display = 'flex'
@@ -257,7 +303,8 @@ function expandirJoao() {
         divLuis.style.flex = '30%'
 
         imgDiscord.style.width = '100%'    
-        imgLuis.style.width = '50%'
+        imgLuis.style.width = '100%'
+        imgLuis.style.marginLeft = '-50%'
         imgJoao.style.width = '100%'
         imgPaulo.style.width = '100%'
 
@@ -266,11 +313,13 @@ function expandirJoao() {
 
         setTimeout(() => {
 
+            navigation.style.height = '4%'
             rpgPop.style.display = 'flex'
             joaoPop.style.display = 'flex'
             divJoao.style.width = '100%'
             divJoao.style.left = '0%'
             divJoao.classList.remove('expandir-joao')
+            navigation.classList.remove('subir')
             imgJoao.style.height = '200%'
             imgJoao.classList.remove('ajustar')
             back.style.display = 'flex'
@@ -287,7 +336,10 @@ function expandirDiscord() {
 
     if(display == 'block') {
 
+        navigation.classList.add('subir')
         container.style.border = 'none'
+        rpgTxt.style.display = 'none'
+        imgButton.style.display = 'none'
 
         divDiscord.style.position = 'absolute'
         divDiscord.style.display = 'flex'
@@ -317,9 +369,11 @@ function expandirDiscord() {
 
         setTimeout(() => {
 
+            navigation.style.height = '4%'
             divDiscord.style.width = '100%'
             divDiscord.style.left = '0%'
             divDiscord.classList.remove('expandir-discord')
+            navigation.classList.remove('subir')
             back.style.display = 'flex'
 
         }, 1000)
