@@ -6,7 +6,7 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-
+  
 .back {
   display: none;
   position: absolute;
@@ -14,11 +14,12 @@
   width: 10%;
   height: 15%;
 }
-  
+
 .item {
     flex: 13%;
     height: 100%;
     overflow: hidden;
+    cursor: pointer;
   }
   
 .item img {

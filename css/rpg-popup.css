@@ -1,4 +1,4 @@
-.main__popup {
+.-rpgpopup {
     display: none;
     position: absolute;
     color: white;
@@ -17,9 +17,21 @@
     justify-content: space-between;
 }
 
-.main__popup h2 {
+.-infoconfig {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.paulo__popup {
+    display: none;
+}
+
+.luis__popup {
+    display: none;
+}
+
+.joao__popup {
+    display: none;
 }
 
 .main__popup__column {
@@ -42,29 +54,3 @@
     margin-right: 3%;
     border: 2px solid #000;
 }
-
-/* 
-.-planet::after {
-    content: url('../img/world.png');
-
-}
-
-.-ficha::after {
-    content: url('../img/world.png');
-}
-
-.-race::after {
-    content: url('../img/world.png');
-}
-
-.-class::after {
-    content: url('../img/world.png');
-}
-
-.-system::after {
-    content: url('../img/world.png');
-}
-
-.-universe::after {
-    content: url('../img/world.png');
-} */

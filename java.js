@@ -10,6 +10,19 @@ const container = document.querySelector('.container')
 const item = document.querySelector('.item')
 const link = document.querySelector('#link')
 const back = document.querySelector('.back')
+const loginpopup = document.querySelector('.-loginpopup')
+const rpgPop = document.querySelector('.-rpgpopup')
+const pauloPop = document.querySelector('.paulo__popup')
+const luisPop = document.querySelector('.luis__popup')
+const joaoPop = document.querySelector('.joao__popup')
+
+function loginPopup() {
+    loginpopup.style.display = 'flex'
+}
+
+function loginPopupFechar() {
+    loginpopup.style.display = 'none'
+}
 
 const ajeitar = () => {
 
@@ -65,6 +78,10 @@ const ajeitar = () => {
 function retrair() {
 
     back.style.display = 'none'
+    rpgPop.style.display = 'none'
+    pauloPop.style.display = 'none'
+    luisPop.style.display = 'none'
+    joaoPop.style.display = 'none'
 
     ajeitar()
 
@@ -152,6 +169,8 @@ function expandirPaulo() {
 
         setTimeout(() => {
 
+            rpgPop.style.display = 'flex'
+            pauloPop.style.display = 'flex'
             divPaulo.style.width = '100%'
             divPaulo.style.left = '0%'
             divPaulo.classList.remove('expandir-paulo')
@@ -197,6 +216,8 @@ function expandirLuis() {
 
         setTimeout(() => {
 
+            rpgPop.style.display = 'flex'
+            luisPop.style.display = 'flex'
             divLuis.style.width = '100%'
             divLuis.style.left = '0%'
             divLuis.classList.remove('expandir-luis')
@@ -245,6 +266,8 @@ function expandirJoao() {
 
         setTimeout(() => {
 
+            rpgPop.style.display = 'flex'
+            joaoPop.style.display = 'flex'
             divJoao.style.width = '100%'
             divJoao.style.left = '0%'
             divJoao.classList.remove('expandir-joao')

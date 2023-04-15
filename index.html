@@ -9,17 +9,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/rpg.css">
-    <link rel="stylesheet" href="./css/main-popup.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/rpg-popup.css">
+    <link rel="stylesheet" href="./css/login-popup.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <title>Three Lords</title>
 </head>
 <body>
     <header class="navigation">
-            <span class="navigation__categories__window__text -rpg">RPG's</span>    
-            <button class="navigation__categories__login">
-                <img class="navigation__login__icon" src="./img/profile.png">
-            </button>
+        <div class="lista1">
+            <a class="navigation__categories__window__text -rpg">RPG's</a>
+            <ul class="lista2">
+                <li class="lista-link"><a class="navigation-link" href="./pages/login.html">Paulo</a></li>
+                <li class="lista-link"><a class="navigation-link" href="">João</a></li>
+                <li class="lista-link"><a class="navigation-link" href="./pages/luis-rpg.html">Luis</a></li>
+            </ul>
+        </div>
+        <button class="navigation__categories__login" onclick="loginPopup()">
+            <img class="navigation__login__icon" src="./img/profile.png">
+        </button>
     </header>
         <main class="main">
             <div class="container">
@@ -28,26 +37,91 @@
                 <div class="item -border" id="luisDiv"><img src="./img/luisimg.jpg" id="luis" onclick="expandirLuis()"></div>
                 <div class="item" id="joaoDiv"><img src="./img/joaoimg.png" id="joao" onclick="expandirJoao()"></div>
                 <div class="back"><img src="img/back.png" onclick="retrair()"></div>
+            <div class="main__popup -rpgpopup">
+                <div class="paulo__popup -infoconfig">
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -planet" src="./img/world.png" alt="">
+                        <a href="">Planeta</a>
+                        <img class="main__popup__column__icon -ficha" src="./img/world.png" alt="">
+                        <a href="">Ficha</a>
+                        <img class="main__popup__column__icon -race" src="./img/world.png" alt="">
+                        <a href="./pages/paulo-raças.html">Raça</a>
+                    </div>
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -class" src="./img/class.png" alt="">
+                        <a href="">Classe</a>
+                        <img class="main__popup__column__icon -system" src="./img/system.webp" alt="">
+                        <a href="">Sistema</a>
+                        <img class="main__popup__column__icon -universe" src="./img/universe.png" alt="">
+                        <a href="">Universo</a>
+                    </div>
+                </div>
+                <div class="luis__popup -infoconfig">
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -planet" src="./img/world.png" alt="">
+                        <a href="">Planeta</a>
+                        <img class="main__popup__column__icon -ficha" src="./img/world.png" alt="">
+                        <a href="">Ficha</a>
+                        <img class="main__popup__column__icon -race" src="./img/world.png" alt="">
+                        <a href="./pages/paulo-raças.html">Raça</a>
+                    </div>
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -class" src="./img/class.png" alt="">
+                        <a href="">Classe</a>
+                        <img class="main__popup__column__icon -system" src="./img/system.webp" alt="">
+                        <a href="">Sistema</a>
+                        <img class="main__popup__column__icon -universe" src="./img/universe.png" alt="">
+                        <a href="">Universo</a>
+                    </div>
+                </div>
+                <div class="joao__popup -infoconfig">
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -planet" src="./img/world.png" alt="">
+                        <a href="">Planeta</a>
+                        <img class="main__popup__column__icon -ficha" src="./img/world.png" alt="">
+                        <a href="">Ficha</a>
+                        <img class="main__popup__column__icon -race" src="./img/world.png" alt="">
+                        <a href="./pages/paulo-raças.html">Raça</a>
+                    </div>
+                    <div class="main__popup__column">
+                        <img class="main__popup__column__icon -class" src="./img/class.png" alt="">
+                        <a href="">Classe</a>
+                        <img class="main__popup__column__icon -system" src="./img/system.webp" alt="">
+                        <a href="">Sistema</a>
+                        <img class="main__popup__column__icon -universe" src="./img/universe.png" alt="">
+                        <a href="">Universo</a>
+                    </div>
+                </div>
             </div>
-            <div class="main__popup">
-                <div class="main__popup__column">
-                    <img class="main__popup__column__icon -planet" src="./img/world.png">
-                    <a href="">Planeta</a>
-                    <img class="main__popup__column__icon -ficha" src="./img/world.png">
-                    <a href="">Ficha</a>
-                    <img class="main__popup__column__icon -race" src="./img/world.png">
-                    <a href="">Raça</a>
+            <div class="main__popup -loginpopup">
+                <span><img class="icon-close" src="./img/icon-close.png" alt="" onclick="loginPopupFechar()"></ion-icon></span>
+                <div class="ajustar">
+                    <h3 class="title-popup">login</h3>
+                    <form action="#">
+                        <div class="input-box -email">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box -senha">
+                            <span class="icon -password"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input class="inputsenha" type="password" required>
+                            <label class="senha">Senha</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label class="remember-forgot__space" for=""><input class="remember-forgot__input" type="checkbox">Lembrar de mim</label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <button class="btn" type="submit">Enviar</button>
+                        <div class="login-register">
+                            <p>Não possui uma conta?<a href="register-link"></a> <a href="#">Registre-se</a></p>
+                        </div>
                 </div>
-                <div class="main__popup__column">
-                    <img class="main__popup__column__icon -class" src="./img/class.png">
-                    <a href="">Classe</a>
-                    <img class="main__popup__column__icon -system" src="./img/system.webp">
-                    <a href="">Sistema</a>
-                    <img class="main__popup__column__icon -universe" src="./img/universe.png">
-                    <a href="">Universo</a>
-                </div>
+                </form>
             </div>
         </main>
 </body>
 <script src="./java.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
