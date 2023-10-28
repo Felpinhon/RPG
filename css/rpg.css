@@ -1,7 +1,0 @@
-.navigation__categories__window__text {
-    font-family: var(--principal-font);
-    color: var(--font-color-secundary);
-    font-size: 32px;
-    font-weight: var(--principal-font-weight);
-    cursor: pointer;
-}
