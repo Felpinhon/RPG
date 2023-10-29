@@ -39,6 +39,7 @@ body {
     border-radius: 50%;
     color: var(--paulo-three-lords-color-toggle);
     background: var(--paulo-three-lords-background-toggle);
+    transform: rotate(180deg);
 }
 
 .sidebar-menu {
@@ -154,6 +155,10 @@ body {
 
 .sidebar.collapsed {
     width: 100px;
+}
+
+.sidebar.collapsed .toggle{
+    transform: rotate(0deg);
 }
 
 .sidebar.collapsed .menu-links .menu-nav a,
