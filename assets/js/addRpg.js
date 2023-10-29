@@ -7,6 +7,8 @@ const descricao = document.querySelector('.descricao')
 
 function openPopup() {
 
+    popup.style.opacity = '0%'
+    popup.style.display = 'flex'
     popup.classList.add('opacityPopup')
     rpgs.classList.add('blur')
     descricao.classList.add('blur')
@@ -23,7 +25,7 @@ function openPopup() {
 }
 
 closePopupBtn.addEventListener('click', function() {
-    popup.style.opacity = '0%'
+    popup.style.display = 'none'
     rpgs.style.filter = 'blur(0px)'
     descricao.style.filter = 'blur(0px)'
 });
