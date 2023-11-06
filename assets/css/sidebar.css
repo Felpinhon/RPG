@@ -222,13 +222,3 @@ body {
 .sidebar.collapsed .toggle {
     left: 90%;
 }
-
-.conteudo {
-    position: relative;
-    left: 270px;
-    transition: all 0.5s ease;
-}
-
-.conteudo.collapsed {
-    left: 120px;
-}
