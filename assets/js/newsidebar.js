@@ -1,4 +1,3 @@
-const body = document.querySelector('body');
 const nav = document.querySelector('nav');
 const toggle = document.querySelector(".toggle");
 const searchBtn = document.querySelector(".search-box");
@@ -25,9 +24,10 @@ searchBtn.addEventListener("click" , () =>{
 
 function sun_moon() {
 
-    body.classList.toggle('dark')
+    sidebar.classList.toggle('dark')
+    conteudo.classList.toggle('dark')
 
-    if(body.classList.contains("dark")){
+    if(sidebar.classList.contains("dark") && conteudo.classList.contains("dark")){
         modeText.innerText = "Light Mode";
         moon.style.display = "none";
         sun.style.display = "inline-block";

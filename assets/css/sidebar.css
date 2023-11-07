@@ -222,3 +222,36 @@ body {
 .sidebar.collapsed .toggle {
     left: 90%;
 }
+
+.sidebar.dark {
+    background: var(--paulo-three-lords-background-sidebar-dark);
+}
+
+.sidebar.dark span {
+    color: #fff;
+}
+
+.sidebar.dark i {
+    color: #fff;
+}
+
+.sidebar.dark .menu-nav a:hover {
+    background: var(--paulo-three-lords-background-menu-hover-dark);
+}
+
+.sidebar.dark .bottom-login-logout:hover {
+    background: var(--paulo-three-lords-background-menu-hover-dark);
+}
+
+.sidebar.dark .bottom-toggle-mode {
+    background-color: #430072;
+}
+
+.sidebar.dark .bottom-toggle-switch .switch {
+    left: 26px;
+}
+
+.conteudo.dark {
+    color: #fff;
+    background-color: #000;
+}
